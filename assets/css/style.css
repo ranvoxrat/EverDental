@@ -444,6 +444,9 @@ body {
   }
 
   .hero-banner {
+    position: relative;
+    display: flex;
+    height: 100%;
     /* background-color: rgba(2, 2, 2, 0.779); */
     border-radius: 12%;
     /* margin-inline-end: -60px;  */
@@ -1051,7 +1054,15 @@ div{
   background-image: -moz-linear-gradient(to right, --black,--black);
 }
 
-
+.containers {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: orange; */
+    margin: 0 15rem ;
+  }
 
 /*-----------------------------------*\
   #MEDIA QUERIES
@@ -1076,21 +1087,22 @@ div{
 .container {
     width: 100%;
     height: 100%;
-    margin: auto;
+    margin:0 auto;
   }
 
   .containers {
+    margin: 0;
+    padding: 4rem;
     position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 100%;
-    margin: auto;
+   flex-wrap: wrap;
   }
   .hero-content{
    position: relative;
-   width: 100%;
+   flex:1;
+   
    /* background-color: green; */
   }
   .hero-banner{
