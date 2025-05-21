@@ -1061,7 +1061,8 @@ div{
  * responsive for larger than 575px screen
  */
 
-@media (min-width: 575px) {
+@media (min-width:400px) {
+  
   :root {
     --fs-1: 4.2rem;
   }
@@ -1072,16 +1073,25 @@ div{
     width: 100%;
     z-index: 9999;  
 }
-
-
-  .container {
-    max-width: 540px;
+.container {
     width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .containers {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     height: 100%;
     margin: auto;
   }
   .hero-content{
    position: relative;
+   width: 100%;
+   /* background-color: green; */
   }
   .hero-banner{
    position: relative;
@@ -1092,9 +1102,10 @@ div{
 .logo{
  font-size: 1.5rem;
 }
-  /**
-   * FOOTER
-   */
+.section-subtitle{
+  /* background-color: orange; */
+  width: 100%;
+}
 
   .footer-top .container {
     grid-template-columns: 1fr 1fr;
