@@ -1,94 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+</div><html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dentelo - We Are Best Dental Service</title>
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
+  <title>Ever Dental Center</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body id="top">
-
-  <!-- 
-    - #HEADER
-  -->
-
   <header class="header">
-
     <div class="header-top">
       <div class="container">
-
         <ul class="contact-list">
-
           <li class="contact-item">
             <ion-icon name="mail-outline"></ion-icon>
-
-            <a href="mailto:info@example.com" class="contact-link">info@example.com</a>
+            <a href="mailto:info@example.com" class="contact-link">everdentalcenter@gmail.com</a>
           </li>
-
           <li class="contact-item">
             <ion-icon name="call-outline"></ion-icon>
-
             <a href="tel:+917052101786" class="contact-link">+91-7052-101-786</a>
           </li>
-
         </ul>
-
         <ul class="social-list">
-
           <li>
-            <a href="#" class="social-link">
+            <a href="https://www.facebook.com/EverDentalCenter" class="social-link" target="_blank" rel="noopener">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
-
           <li>
             <a href="#" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
-
           <li>
             <a href="#" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
-
           <li>
             <a href="#" class="social-link">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
-
         </ul>
-
       </div>
     </div>
 
-    <div class="header-bottom" data-header>
+    <div class="header-bottom" data-header  data-aos="fade-up"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center">
       <div class="container">
 
-        <a href="#" class="logo">Dentelo.</a>
+        <a href="#" class="logo">
+          <img src="./assets/images/logo1.png" alt="Dental Center Logo" width="40" height="40">
+          <span class="logo-text">Ever Dental</span> Center
+        </a>
 
         <nav class="navbar container" data-navbar>
           <ul class="navbar-list">
@@ -106,18 +87,17 @@
             </li>
 
             <li>
-              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+              <a href="#blog" class="navbar-link" data-nav-link>Testimony</a>
             </li>
 
             <li>
               <a href="#" class="navbar-link" data-nav-link>Contact</a>
             </li>
-
+           
           </ul>
         </nav>
 
-        <a href="#" class="btn">Book appointment</a>
-
+       
         <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
           <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
           <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
@@ -139,33 +119,33 @@
         - #HERO
       -->
 
-      <section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg.png')"
-        aria-label="hero">
-        <div class="container">
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container ">
 
-          <div class="hero-content">
+          <div class="hero-content"   data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+           >
 
-            <p class="section-subtitle">Welcome To Dentelo</p>
+            <p class="section-subtitle" >Welcome To Ever Dental Center</p>
 
-            <h1 class="h1 hero-title">We Are Best Dental Service</h1>
+            <h1 class="h1 hero-title">Your Smile, Our Priority</h1>
 
             <p class="hero-text">
-              Donec vitae libero non enim placerat eleifend aliquam erat volutpat. Curabitur diam ex, dapibus purus
-              sapien, cursus sed
-              nisl tristique, commodo gravida lectus non.
+              Experience the best dental care with our expert team. We ensure your smile stays healthy and radiant.
             </p>
-
-            <form action="" class="hero-form">
-              <input type="email" name="email_address" aria-label="email" placeholder="Your Email Address..." required
-                class="email-field">
-
-              <button type="submit" class="btn">Get Call Back</button>
-            </form>
-
+            <div class="buttons-act">
+              <a href="#service" class="btn-booked"><i class="fa-solid fa-arrow-down"></i> Explore</a>
+             <a href="#" class="btn-book" id="openModalBtn"><i class="fa-solid fa-calendar-days"></i> Book an Appointment</a>
+            </div>
           </div>
 
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" width="587" height="839" alt="hero banner" class="w-100">
+          <figure class="hero-banner"   data-aos="fade-left"
+           data-aos-delay="50"
+           data-aos-duration="1000"
+           data-aos-easing="ease-in-out">
+            <img src="./assets/images/bg3.png" width="490" alt="hero banner" >
           </figure>
 
         </div>
@@ -179,10 +159,17 @@
         - #SERVICE
       -->
 
-      <section class="section service" id="service" aria-label="service">
+      <section class="section service" id="service" aria-label="service"  data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"> 
         <div class="container">
 
-          <p class="section-subtitle text-center">Our Services</p>
+          <p class="text-center our-service">Our Services</p>
 
           <h2 class="h2 section-title text-center">What We Provide</h2>
 
@@ -198,10 +185,9 @@
 
                 <div>
                   <h3 class="h3 card-title">Root Canal</h3>
-
-                  <p class="card-text">
-                    Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
-                  </p>
+                    <p class="card-text">
+                      Advanced nerve therapy to relieve pain and preserve natural teeth structure.
+                    </p>
                 </div>
 
               </div>
@@ -216,11 +202,11 @@
                 </div>
 
                 <div>
-                  <h3 class="h3 card-title">Alignment Teeth</h3>
+                  <h3 class="h3 card-title">Teeth Alignment</h3>
 
-                  <p class="card-text">
-                    Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
-                  </p>
+                    <p class="card-text">
+                    Innovative orthodontic treatments to correct bite issues and jaw alignment.
+                    </p>
                 </div>
 
               </div>
@@ -230,16 +216,15 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/service-icon-3.png" width="100" height="100" loading="lazy"
+                  <img src="./assets/images/service-icon-6.png" width="100" height="100" loading="lazy"
                     alt="service icon" class="w-100">
                 </div>
 
                 <div>
                   <h3 class="h3 card-title">Cosmetic Teeth</h3>
-
-                  <p class="card-text">
-                    Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
-                  </p>
+                    <p class="card-text">
+                   Transform your smile with veneers, bonding, and whitening procedures.
+                    </p>
                 </div>
 
               </div>
@@ -261,11 +246,10 @@
                 </div>
 
                 <div>
-                  <h3 class="h3 card-title">Oral Hygiene</h3>
-
-                  <p class="card-text">
-                    Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
-                  </p>
+                  <h3 class="h3 card-title">Dental Surgery</h3>
+                    <p class="card-text">
+                     Complex extractions and minor oral surgeries performed with precision and care.
+                    </p>
                 </div>
 
               </div>
@@ -278,13 +262,11 @@
                   <img src="./assets/images/service-icon-5.png" width="100" height="100" loading="lazy"
                     alt="service icon" class="w-100">
                 </div>
-
                 <div>
-                  <h3 class="h3 card-title">Live Advisory</h3>
-
-                  <p class="card-text">
-                    Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
-                  </p>
+                  <h3 class="h3 card-title">X-Ray(Panoramic Periapical)</h3>
+                    <p class="card-text">
+                    High-resolution imaging for accurate diagnostics and effective treatment planning.
+                    </p>
                 </div>
 
               </div>
@@ -294,16 +276,14 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/service-icon-6.png" width="100" height="100" loading="lazy"
+                  <img src="./assets/images/service-icon-3.png" width="100" height="100" loading="lazy"
                     alt="service icon" class="w-100">
                 </div>
-
                 <div>
-                  <h3 class="h3 card-title">Cavity Inspection</h3>
-
-                  <p class="card-text">
-                    Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
-                  </p>
+                  <h3 class="h3 card-title">Dental Braces</h3>
+                    <p class="card-text">
+                    Personalized orthodontic care using traditional and invisible braces to perfect your smile.
+                    </p>
                 </div>
 
               </div>
@@ -313,224 +293,72 @@
 
         </div>
       </section>
-
-
-
-
-
       <!-- 
         - #ABOUT
       -->
 
-      <section class="section about" id="about" aria-label="about">
-        <div class="container">
-
+      <section class="section about" id="about" aria-label="about"  data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
+          <div class="container">
           <figure class="about-banner">
-            <img src="./assets/images/about-banner.png" width="470" height="538" loading="lazy" alt="about banner"
+            <img src="./assets/images/dentist2.jpg" width="470" height="538" loading="lazy" alt="about banner"
               class="w-100">
           </figure>
-
           <div class="about-content">
-
             <p class="section-subtitle">About Us</p>
-
             <h2 class="h2 section-title">We Care For Your Dental Health</h2>
-
             <p class="section-text section-text-1">
-              Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam quis volutpat est, sed dapibus
-              sapien. Cras
-              condimentum eu velit id tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo vehicula arcu.
+              We are dedicated to providing exceptional dental care in a comfortable and friendly environment. Our team
+              of experts ensures that every patient receives personalized attention and the best treatment possible.
             </p>
-
             <p class="section-text">
-              Aliquam erat volutpat. Aliquam enim massa, sagittis blandit ex mattis, ultricies posuere sapien. Morbi a
-              dignissim enim.
-              Fusce elementum, augue in elementum porta, sapien nunc volutpat ex, a accumsan nunc lectus eu lectus.
+              From routine check-ups to advanced dental procedures, we are equipped with the latest technology to cater
+              to all your dental needs. Your smile is our priority, and we strive to make every visit a pleasant
+              experience.
             </p>
 
-            <a href="#" class="btn">Read more</a>
+            <a href="#" class="btn-read">Read more</a>
 
           </div>
 
         </div>
       </section>
-
-
-
-
-
-      <!-- 
-        - #DOCTOR
-      -->
-
-      <section class="section doctor" aria-label="doctor">
-        <div class="container">
-
-          <p class="section-subtitle text-center">Our Doctor</p>
-
-          <h2 class="h2 section-title text-center">Best Expert Dentist</h2>
-
-          <ul class="has-scrollbar">
-
-            <li class="scrollbar-item">
-              <div class="doctor-card">
-
-                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
-                  <img src="./assets/images/doctor-1.png" width="460" height="500" loading="lazy" alt="Howard Holmes"
-                    class="img-cover">
+      <!-- Mission and Vission -->
+      <section class="section doctor" aria-label="doctor"  data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false">
+              <div class="container">
+                <div class="aboutUs">
+                  <h2 class="h2 abouts">About Us</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia saepe, nostrum culpa reiciendis nesciunt, eaque deleniti voluptates fugit quis amet autem omnis optio suscipit ratione est recusandae ullam blanditiis dolore?</p>
                 </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Howard Holmes</a>
-                </h3>
-
-                <p class="card-subtitle">Dentist</p>
-
-                <ul class="card-social-list">
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-
-                </ul>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="doctor-card">
-
-                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
-                  <img src="./assets/images/doctor-2.png" width="460" height="500" loading="lazy" alt="Ella Thompson"
-                    class="img-cover">
+                <div class="card-container">
+                    <div class="card">
+                       <div class="card-header">
+                         Mission
+                       </div>
+                       <div class="card-content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, error dolor? Unde, iste sunt excepturi dolorem quae eveniet? Incidunt aspernatur repellendus fugit id? Placeat corrupti ex dolorem tempora, facilis id.
+                       </div>
+                    </div>
+                     <div class="card">
+                       <div class="card-header">
+                         Vission
+                       </div>
+                       <div class="card-content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, error dolor? Unde, iste sunt excepturi dolorem quae eveniet? Incidunt aspernatur repellendus fugit id? Placeat corrupti ex dolorem tempora, facilis id.
+                       </div>
+                    </div>
                 </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Ella Thompson</a>
-                </h3>
-
-                <p class="card-subtitle">Dentist</p>
-
-                <ul class="card-social-list">
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-
-                </ul>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="doctor-card">
-
-                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
-                  <img src="./assets/images/doctor-3.png" width="460" height="500" loading="lazy" alt="Vincent Cooper"
-                    class="img-cover">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Vincent Cooper</a>
-                </h3>
-
-                <p class="card-subtitle">Dentist</p>
-
-                <ul class="card-social-list">
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-
-                </ul>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="doctor-card">
-
-                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
-                  <img src="./assets/images/doctor-4.png" width="460" height="500" loading="lazy" alt="Danielle Bryant"
-                    class="img-cover">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Danielle Bryant</a>
-                </h3>
-
-                <p class="card-subtitle">Dentist</p>
-
-                <ul class="card-social-list">
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="card-social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-
-                </ul>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
       </section>
 
 
@@ -541,7 +369,14 @@
         - #CTA
       -->
 
-      <section class="section cta" aria-label="cta">
+      <section class="section cta" aria-label="cta"  data-aos="fade-up"
+
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+>
         <div class="container">
 
           <figure class="cta-banner">
@@ -551,26 +386,22 @@
 
           <div class="cta-content">
 
-            <p class="section-subtitle">Book Dentail Appointment</p>
+            <p class="section-subtitle">Book Dental Appointment Now!</p>
 
-            <h2 class="h2 section-title">We Are open And Welcoming Patients</h2>
+            <h2 class="h2 section-title">We are open and welcoming patients.</h2>
 
-            <a href="#" class="btn">Book appointment</a>
+             <a href="#" class="btn-booked" id="openModalBtn"><i class="fa-solid fa-calendar-days"></i> Book an Appointment</a>
 
           </div>
 
         </div>
       </section>
-
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog" id="blog" aria-label="blog">
+      <section class="section blog" id="blog" aria-label="blog"  data-aos="fade-up"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+   >
         <div class="container">
 
           <p class="section-subtitle text-center">Our Blog</p>
@@ -589,18 +420,18 @@
                   <div class="card-badge">
                     <ion-icon name="calendar-outline"></ion-icon>
 
-                    <time class="time" datetime="2022-03-24">24th March 2022</time>
+                    <time class="time" datetime="2022-03-24">19th March 2025</time>
                   </div>
                 </figure>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Cras accumsan nulla nec lacus ultricies placerat.</a>
+                    <a href="#" class="card-title">Sample Text</a>
                   </h3>
 
                   <p class="card-text">
-                    Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem deserunt reiciendis accusantium eum quos quaerat cum, odio perspiciatis repellendus recusandae suscipit dolore
                   </p>
 
                   <a href="#" class="card-link">Read More</a>
@@ -620,18 +451,18 @@
                   <div class="card-badge">
                     <ion-icon name="calendar-outline"></ion-icon>
 
-                    <time class="time" datetime="2022-03-24">24th March 2022</time>
+                    <time class="time" datetime="2022-03-24">20th May 2025</time>
                   </div>
                 </figure>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Dras accumsan nulla nec lacus ultricies placerat.</a>
+                    <a href="#" class="card-title">Sample text</a>
                   </h3>
 
                   <p class="card-text">
-                    Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ullam iure laborum error voluptatum corporis magnam, natus amet dolorum labore accusantium iusto ratione.
                   </p>
 
                   <a href="#" class="card-link">Read More</a>
@@ -651,18 +482,18 @@
                   <div class="card-badge">
                     <ion-icon name="calendar-outline"></ion-icon>
 
-                    <time class="time" datetime="2022-03-24">24th March 2022</time>
+                    <time class="time" datetime="2022-03-24">18th March 2022</time>
                   </div>
                 </figure>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Seas accumsan nulla nec lacus ultricies placerat.</a>
+                    <a href="#" class="card-title">Sample Text</a>
                   </h3>
 
                   <p class="card-text">
-                    Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas voluptatem porro tenetur expedita obcaecati esse voluptate. Numquam perferendis nostrum, eum soluta, 
                   </p>
 
                   <a href="#" class="card-link">Read More</a>
@@ -695,57 +526,46 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">Dentelo.</a>
-
-          <p class="footer-text">
-            Mauris non nisi semper, lacinia neque in, dapibus leo. Curabitur sagittis libero tincidunt tempor finibus.
-            Mauris at
-            dignissim ligula, nec tristique orci.Quisque vitae metus.
-          </p>
-
+          <!-- <a href="#" class="logo">Dentelo.</a> -->
+           <a href="#" class="logo">
+          <img src="./assets/images/logo1.png" alt="Dental Center Logo" width="40" height="40">
+          <span class="logo-text">Ever Dental</span> Center
+        </a>
+            <p class="footer-text"></p>
+            At Ever Dental Center, we are committed to providing exceptional dental care with a focus on your comfort and satisfaction. Your smile is our priority, and we strive to make every visit a pleasant experience.
+            </p>
           <div class="schedule">
             <div class="schedule-icon">
               <ion-icon name="time-outline"></ion-icon>
             </div>
-
             <span class="span">
-              Monday - Saturday:<br>
-              9:00am - 10:00Pm
+              Monday - Saturday<br>
+              10:00Am - 05:00Pm
             </span>
           </div>
-
         </div>
-
         <ul class="footer-list">
-
           <li>
             <p class="footer-list-title">Other Links</p>
           </li>
-
           <li>
             <a href="#" class="footer-link">
               <ion-icon name="add-outline"></ion-icon>
-
               <span class="span">Home</span>
             </a>
           </li>
-
           <li>
             <a href="#" class="footer-link">
               <ion-icon name="add-outline"></ion-icon>
-
               <span class="span">About Us</span>
             </a>
           </li>
-
           <li>
             <a href="#" class="footer-link">
               <ion-icon name="add-outline"></ion-icon>
-
               <span class="span">Services</span>
             </a>
           </li>
-
           <li>
             <a href="#" class="footer-link">
               <ion-icon name="add-outline"></ion-icon>
@@ -790,7 +610,7 @@
             <a href="#" class="footer-link">
               <ion-icon name="add-outline"></ion-icon>
 
-              <span class="span">Alignment Teeth</span>
+              <span class="span">Teeth Alignment</span>
             </a>
           </li>
 
@@ -806,7 +626,7 @@
             <a href="#" class="footer-link">
               <ion-icon name="add-outline"></ion-icon>
 
-              <span class="span">Oral Hygiene</span>
+              <span class="span">X-Ray(Panoramic Periapical)</span>
             </a>
           </li>
 
@@ -814,7 +634,7 @@
             <a href="#" class="footer-link">
               <ion-icon name="add-outline"></ion-icon>
 
-              <span class="span">Live Advisory</span>
+              <span class="span">Dental Braces</span>
             </a>
           </li>
 
@@ -822,7 +642,7 @@
             <a href="#" class="footer-link">
               <ion-icon name="add-outline"></ion-icon>
 
-              <span class="span">Cavity Inspection</span>
+              <span class="span">Dental Surgery</span>
             </a>
           </li>
 
@@ -840,8 +660,8 @@
             </div>
 
             <address class="item-text">
-              1247/Plot No. 39, 15th Phase,<br>
-              LHB Colony, Kanpur
+              1234/Plot No. 56, 10th Avenue,<br>
+              Makati City, Philippines
             </address>
           </li>
 
@@ -858,7 +678,7 @@
               <ion-icon name="mail-outline"></ion-icon>
             </div>
 
-            <a href="mailto:help@example.com" class="footer-link">help@example.com</a>
+            <a href="mailto:help@example.com" class="footer-link">everdentalcenter@gmail.com</a>
           </li>
 
         </ul>
@@ -870,7 +690,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 All Rights Reserved by codewithsadee.
+          &copy; 2025 All Rights Reserved by DGT One Dental Center.
         </p>
 
         <ul class="social-list">
@@ -899,23 +719,143 @@
     </div>
 
   </footer>
-
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
+  
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
   </a>
+  <!-- Modal Structure -->
+        <div id="appointmentModal" class="modal" style="display:none;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close" id="closeModalBtn">&times;</span>
+                <h2><i class="fa-solid fa-calendar-days"></i> Book an Appointment</h2>           
+              </div>
+            <p>Please input your valid information below to book your appointment.</p>
+            <form id="appointmentForm">
+              
+                <div class="form-group row">
+                  <div class="form-col">
+                    <label for="firstname">Firstname<span class="askterisk">*</span></label>
+                    <input type="text" id="firstname" placeholder="Enter Firstname" name="firstname" required>
+                  </div>
+                  <div class="form-col">
+                    <label for="middlename">Middlename<span class="askterisk">*</span></label>
+                    <input type="text" id="middlename" name="middlename" placeholder="Enter Middlename">
+                  </div>
+                  <div class="form-col">
+                    <label for="lastname">Lastname<span class="askterisk">*</span></label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter Lastname" required>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="form-col">
+                    <label for="email">Email<span class="askterisk">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                  </div>
+                  <div class="form-col">
+                    <label for="Contact No.">Contact No.<span class="askterisk">*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Contact Number" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="address">Address<span class="askterisk">*</span></label>
+                  <input type="text" id="address" name="address" placeholder="Enter Address">
+                </div>
+
+                <div class="form-group row">
+                  <div class="form-col">
+                    <label for="date">Preferred Date<span class="askterisk">*</span></label>
+                    <input type="date" id="date" name="date" required>
+                  </div>
+ 
+                  <div class="form-col">
+                      <label for="time_slot">Preferred Time Slot<span class="askterisk">*</span></label>
+                      <select id="time_slot" name="time_slot" required>
+                        <option value="" selected disabled>Select time slot</option>
+                        <option value="0">10am-11am</option>
+                        <option value="1">11am-12pm</option>
+                        <option value="2">12pm-1pm</option>
+                        <option value="3">1pm-2pm</option>
+                        <option value="4">2pm-3pm</option>
+                        <option value="5">3pm-4pm</option>
+                        <option value="6">4pm-5pm</option>
+                      </select>
+                </div>
+              </div>
+               <div class="form-group row">
+                <div class="form-col">
+                    <label for="service">Service<span class="askterisk">*</span></label>
+                    <select id="service" name="service" required>
+                      <option value="" disabled selected>Select a service</option>
+                      <option value="1">Adjustment</option>
+                      <option value="2">Consult</option>
+                      <option value="3">Dentures/Veneers/Bridge</option>
+                      <option value="4">Extraction (Bunot)</option>
+                      <option value="5">Frenectomy</option>
+                      <option value="6">Gingivectomy</option>
+                      <option value="7">New Ortho/Braces</option>
+                      <option value="8">Oral Prophylaxis (Cleaning)</option>
+                      <option value="9">RB/Wire</option>
+                      <option value="10">Resto (Pasta)</option>
+                      <option value="11">Surgery</option>
+                      <option value="12">TADS</option>
+                      <option value="13">Whitening</option>
+                      <option value="0">Others</option>
+                    </select>
+                    <button type="submit" class="btn-modal-submit"><i class="fa-solid fa-check"></i>Submit</button>
+                  </div>
+                  </div>
+            </form>
+          </div>
+        </div>
 
 
+<script>
+  AOS.init();
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
 
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-
+});
+</script>
+<script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var modal = document.getElementById('appointmentModal');
+            var openBtn = document.getElementById('openModalBtn');
+            var closeBtn = document.getElementById('closeModalBtn');
+            openBtn.onclick = function(e) {
+              e.preventDefault();
+              modal.style.display = 'flex';
+            };
+            closeBtn.onclick = function() {
+              modal.style.display = 'none';
+            };
+            window.onclick = function(event) {
+              if (event.target == modal) {
+          modal.style.display = 'none';
+              }
+            };
+          });
+        </script>
   <!-- 
     - custom js link
   -->
