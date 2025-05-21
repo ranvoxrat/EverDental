@@ -355,7 +355,7 @@ body {
 }
 
 .logo {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   color: white;
   font-family: var(--ff-poppins);
