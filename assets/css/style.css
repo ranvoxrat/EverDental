@@ -465,7 +465,7 @@ body {
       rgba(2, 97, 78, 0.834),
       rgb(0, 0, 0)
     ),
-    url("/assets/images/full-equiped-medical-cabinet.jpg");
+    url("../images/full-equiped-medical-cabinet.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
