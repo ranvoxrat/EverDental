@@ -190,6 +190,7 @@ body {
 
 .btn-book:hover {
   transform: scale(1.1);
+  color:rgba(0, 253, 215, 0.955);;
   box-shadow: 4px 4px 18px rgba(0, 253, 215, 0.955);
 }
 
@@ -200,7 +201,7 @@ body {
   background: transparent;
   box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.762);
   color: white;
-  width: 30%;
+  width: 40%;
   padding: 1.5rem;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -208,6 +209,7 @@ body {
 .btn-booked:hover {
   transform: scale(1.1);
   border: 2px solid var(--royal-blue-light);
+  color:rgba(0, 253, 215, 0.955);
   box-shadow: 4px 4px 18px rgba(0, 253, 215, 0.955);
 }
 .btn-read {
@@ -247,7 +249,17 @@ body {
 .logo-text {
   font-family: var(--ff-poppins);
   font-weight: 300;
-  padding: 0.5rem;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.logo2{
+  position: relative;
+  display: inline-flex;
+}
+.logo-text1 {
+  font-family: var(--ff-poppins);
+  font-weight: 300;
+  font-size: 20px;
   color: rgb(255, 255, 255);
 }
 .img-holder {
@@ -314,7 +326,8 @@ body {
 .buttons-act{
   position: relative;
   display:inline-flex;
-  width: 100%;
+  justify-content: space-between;
+  width:70%;
   gap: 2rem;
 }
 .header-bottom > .container {
@@ -328,6 +341,7 @@ body {
   display: flex;
   align-items: center;
   color: white;
+  width: 40%;
   font-family: var(--ff-poppins);
   font-size: 3rem;
   font-weight: var(--fw-800);
@@ -395,7 +409,9 @@ body {
   .hero-content {
     position: relative;
     display: block;
-    padding: 2rem;
+    left: 10px;
+    top: -80px;
+    margin: 0;
   }
 
   .hero-form {
@@ -418,7 +434,7 @@ body {
   .hero-banner {
     position: relative;
     display: flex;
-    height: 80%;
+    height: auto;
     width: 60%;
 
   }
@@ -1038,10 +1054,10 @@ div{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin:0;
     width: 100%;
-    padding-left: 12%;
+    padding-left: 10%;
     padding-right: 12%;
+  
     /* background-color: orange; */
   }
 
@@ -1145,7 +1161,7 @@ div{
 }
 .logo-text{
   font-family: var(--ff-poppins);
-  font-size: 12px;
+  font-size: 20px;
 }
   .container {
     max-width: 750px;
