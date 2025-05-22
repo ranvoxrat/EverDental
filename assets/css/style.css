@@ -62,9 +62,6 @@
   scroll-behavior: smooth;
 
 }
-body{
-   overflow-x: hidden;
-}
 li {
   list-style: none;
 }
@@ -120,6 +117,8 @@ body {
   background-color: var(--white);
   color: var(--sonic-silver);
   font-size: 1.5rem;
+  height: 100%;
+  width: 100%;
 }
 
 /*-----------------------------------*\
@@ -136,7 +135,14 @@ body {
 }
 
 .section-subtitle {
-  color: rgb(255, 255, 255);
+  color: rgb(250, 250, 250);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-6);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-block-end: 10px;
+}.section-subtitles {
+  color: rgb(86, 86, 86);
   font-family: var(--ff-poppins);
   font-size: var(--fs-6);
   font-weight: 500;
@@ -246,6 +252,15 @@ body {
 .section-text {
   line-height: 1.7;
 }
+.logo {
+  position: relative;
+  display: inline-flex;
+  color: white;
+  width: 100%;
+  font-family: var(--ff-poppins);
+  font-size: 3rem;
+  font-weight: var(--fw-800);
+}
 .logo-text {
   font-family: var(--ff-poppins);
   font-weight: 300;
@@ -327,8 +342,8 @@ body {
   position: relative;
   display:inline-flex;
   justify-content: space-between;
-  width:70%;
-  gap: 2rem;
+  width:100%;
+  gap: 1rem;
 }
 .header-bottom > .container {
   display: flex;
@@ -337,15 +352,7 @@ body {
   gap: 20px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  color: white;
-  width: 40%;
-  font-family: var(--ff-poppins);
-  font-size: 3rem;
-  font-weight: var(--fw-800);
-}
+
 
 .nav-toggle-btn {
   color: var(--black);
@@ -408,9 +415,8 @@ body {
 
   .hero-content {
     position: relative;
-    display: block;
-    left: 10px;
-    top: -80px;
+    display: flex;
+    flex-direction: column;
     margin: 0;
   }
 
@@ -442,18 +448,33 @@ body {
   /**
    * SERVICE
    */
-
+main,article{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  content: "";
+  clear: both;
+}
 .hero {
   position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 100vh;
- 
-  /* background-color: orange; */
+ background-image: linear-gradient(
+      to left,
+      rgba(2, 97, 78, 0.834),
+      rgb(0, 0, 0)
+    ),
+    url("../images/full-equiped-medical-cabinet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
 }
 
-.hero::before {
+/* .hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -471,7 +492,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   z-index: -8;
-}
+} */
 
 .hero-content {
   position: relative;
@@ -1047,14 +1068,18 @@ div{
   position:relative;
   background-image: -moz-linear-gradient(to right, --black,--black);
 }
-
+.image-side{
+  width: 50%;
+}
 .containers {
     position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100%;
+    height:auto;
+    overflow: hidden;
     padding-left: 10%;
     padding-right: 12%;
   
